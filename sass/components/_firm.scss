@@ -1,0 +1,37 @@
+.list-firm {
+  display: flex;
+  .style + .style {
+    margin-left: 30px;
+  }
+}
+.section-firm {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  .title {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+  }
+}
+.style .link-firm {
+  width: 170px;
+  height: 90px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-firm {
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}

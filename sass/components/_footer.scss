@@ -1,0 +1,153 @@
+.container {
+  .web-studio {
+    text-align: left;
+    display: block;
+    padding-bottom: 20px;
+  }
+  .footer-list {
+    display: flex;
+    .style {
+      text-align: left;
+      width: 230px;
+    }
+    .style + .style {
+      margin-left: 70px;
+    }
+    .icon-social {
+      fill: $white-color;
+    }
+    .link {
+      display: inline-flex;
+      background-color: rgba(255, 255, 255, 0.1);
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50px;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.footer {
+  background-color: #2f303a;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .link:hover,
+  .link:focus {
+    background-color: $accent-color;
+  }
+  .studio {
+    font-family: $second-font;
+    color: $white-color;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $white-color;
+    font-style: normal;
+    width: 230px;
+    margin-right: 0;
+  }
+  .link-phone {
+    display: block;
+    text-align: left;
+    margin-top: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-logo {
+    display: flex;
+    width: 206px;
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $white-color;
+  }
+  .link-phone:hover,
+  .link-phone:focus {
+    color: $accent-color;
+  }
+}
+.style-footer {
+  position: relative;
+  margin-left: 70px;
+  text-align: left;
+}
+.web-studio-footer {
+  display: block;
+  width: 500px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+.footer-logo .footer-list + .footer-list {
+  margin-left: 10px;
+}
+.title-footer {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $white-color;
+  font-style: normal;
+  width: 230px;
+  margin-right: 0;
+}
+.text-write {
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: inherit;
+  border-radius: 4px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: $white-color;
+}
+.btn-studio.footer {
+  position: absolute;
+  left: 100%;
+  top: 31%;
+  padding: 10px 30px;
+  min-width: 200px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
