@@ -1,8 +1,11 @@
 .list-advantage {
-  display: flex;
+  /*display: flex;*/
   text-align: left;
   .style + .style {
-    margin-left: 30px;
+    /*margin-left: 30px;*/
+  }
+  .style:last-child {
+    padding-bottom: 60px;
   }
 }
 .section-advantage {
@@ -22,12 +25,12 @@
   }
 }
 .style {
-  width: 270px;
+  /*width: 270px;*/
   .icon {
     background-color: #f5f4fa;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    width: 270px;
+    /*width: 270px;*/
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
@@ -47,4 +50,42 @@
 }
 .icon .img {
   margin: 25px 100px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media (min-width: 768px) {
+  .list-advantage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 738px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .style {
+    width: calc((100% - 30px) / 2);
+  }
+  .style:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .list-advantage {
+    width: 1170px;
+    .style + .style {
+      margin-left: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .style {
+    width: 270px;
+  }
 }

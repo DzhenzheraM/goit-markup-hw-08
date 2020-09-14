@@ -13,8 +13,13 @@
   padding-top: 94px;
   justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: left;
+  .btn-list {
+    margin-right: 8px;
+  }
   .btn-list + .btn-list {
-    margin-left: 8px;
+    /*margin-right: 8px;*/
   }
 }
 .section-nav .button-nav {
@@ -31,5 +36,10 @@
     background-color: $accent-color;
     color: $white-color;
     cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    justify-content: center;
   }
 }

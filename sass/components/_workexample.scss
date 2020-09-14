@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   .work-item {
-    margin-right: 27px;
+    /*margin-right: 27px;*/
     margin-bottom: 27px;
     text-align: left;
     border: 1px solid #eeeeee;
@@ -16,7 +16,7 @@
   }
 }
 .work-item {
-  width: 370px;
+  width: 450px;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -95,4 +95,31 @@
 .link:focus .caption {
   opacity: 1;
   transform: translateY(0);
+}
+@media screen and (min-width: 768px) {
+  .work-item {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+  .work-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .work-item {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work-item {
+    margin-right: 27px;
+    margin-bottom: 27px;
+    text-align: left;
+    .work-item {
+      width: 370px;
+    }
+  }
+  .work-item:nth-child(2n) {
+    margin-left: 0px;
+  }
 }

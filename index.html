@@ -17,33 +17,52 @@
         <a href="" class="web-studio">
           <span class="web">Web</span> <span class="studio">Studio</span>
         </a>
-        <ul class="head-nav">
-          <li class="item">
-            <a href="./index.html" class="link current"> Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link"> Портфолио</a>
-          </li>
-          <li class="item"><a href="" class="link"> Контакты</a></li>
-        </ul>
-        <ul class="head-nav phone">
-          <li class="item-phone">
-            <a href="mailto:info@devstudio.com" class="link-phone">
-              <svg class="icon-letter">
-                <use xlink:href="./img/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="item-phone">
-            <a href="tel:380961111111" class="link-phone"
-              ><svg class="icon-phone">
-                <use xlink:href="./img/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="head-none" id="head-menu" data-menu>
+          <ul class="head-nav">
+            <li class="item">
+              <a href="./index.html" class="link current"> Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link"> Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link"> Контакты</a></li>
+          </ul>
+          <ul class="head-nav phone">
+            <li class="item-phone">
+              <a href="mailto:info@devstudio.com" class="link-phone">
+                <svg class="icon-letter">
+                  <use xlink:href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="item-phone">
+              <a href="tel:380961111111" class="link-phone"
+                ><svg class="icon-phone">
+                  <use xlink:href="./img/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-button" data-menu-button>
+          <svg
+            width="40px"
+            heigth="40px"
+            aria-expanded="false"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              xlink:href="./img/sprite.svg#icon-menu"
+            ></use>
+            <use
+              class="icon-close"
+              xlink:href="./img/sprite.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
       </nav>
     </header>
     <main class="main">
@@ -123,12 +142,35 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list-team">
             <li class="style">
-              <img
-                class="style-img"
-                src="./our-team/igor.jpg"
-                alt=" фото Игоря демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/igor-desktop@1x.jpg 1x,
+                    ./images/team/igor-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-tablet@1x.jpg 1x,
+                    ./images/team/igor-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/igor-mobile@1x.jpg 1x,
+                    ./images/team/igor-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+
+                <img
+                  class="style-img"
+                  src="./our-team/igor.jpg"
+                  alt=" фото Игоря демьяненко"
+                />
+              </picture>
               <h3 class="caption">Игорь Демьяненко</h3>
               <p class="text">Product Designer</p>
               <ul class="social">
@@ -163,12 +205,35 @@
               </ul>
             </li>
             <li class="style">
-              <img
-                class="style-img"
-                src="./our-team/olga.jpg"
-                alt="фото Ольги Репиной"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/olga-desktop@1x.jpg 1x,
+                    ./images/team/olga-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-tablet@1x.jpg 1x,
+                    ./images/team/olga-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/olga-mobile@1x.jpg 1x,
+                    ./images/team/olga-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="style-img"
+                  src="./our-team/olga.jpg"
+                  alt="фото Ольги Репиной"
+                />
+              </picture>
+
               <h3 class="caption">Ольга Репина</h3>
               <p class="text">Frontend Developer</p>
               <ul class="social">
@@ -203,12 +268,35 @@
               </ul>
             </li>
             <li class="style">
-              <img
-                class="style-img"
-                src="./our-team/nikolai.jpg"
-                alt="фото Николая Тарасова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/nikolai-desktop@1x.jpg 1x,
+                    ./images/team/nikolai-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolai-tablet@1x.jpg 1x,
+                    ./images/team/nikolai-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/nikolai-mobile@1x.jpg 1x,
+                    ./images/team/nikolai-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="style-img"
+                  src="./our-team/nikolai.jpg"
+                  alt="фото Николая Тарасова"
+                />
+              </picture>
+
               <h3 class="caption">Николай Тарасов</h3>
               <p class="text">Marketing</p>
               <ul class="social">
@@ -243,12 +331,35 @@
               </ul>
             </li>
             <li class="style">
-              <img
-                class="style-img"
-                src="./our-team/mihail.jpg"
-                alt="фото Михаила Ермакова"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/mihail-desktop@1x.jpg 1x,
+                    ./images/team/mihail-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mihail-tablet@1x.jpg 1x,
+                    ./images/team/mihail-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mihail-mobile@1x.jpg 1x,
+                    ./images/team/mihail-mobile@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  class="style-img"
+                  src="./our-team/mihail.jpg"
+                  alt="фото Михаила Ермакова"
+                />
+              </picture>
+
               <h3 class="caption">Михаил Ермаков</h3>
               <p class="text">UI Designer</p>
               <ul class="social">
@@ -344,7 +455,7 @@
             <a href="" class="web-studio-footer">
               <span class="web">Web</span> <span class="studio">Studio</span>
             </a>
-            <address>
+            <address class="address">
               <p class="text">г. Киев, пр-т Леси Украинки, 26</p>
               <ul>
                 <li>
@@ -491,5 +602,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
