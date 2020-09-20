@@ -45,12 +45,12 @@ ul {
   .item {
     position: relative;
   }
-  .item + .item {
-    /*margin-left: 50px;*/
-  }
-  .item-phone + .item-phone {
-    /*margin-left: 30px;*/
-  }
+  /*.item + .item {
+    margin-left: 50px;
+  }*/
+  /*.item-phone + .item-phone {
+    margin-left: 30px;
+  }*/
   &.phone {
     margin-left: auto;
   }
