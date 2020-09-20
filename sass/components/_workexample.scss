@@ -96,7 +96,23 @@
   opacity: 1;
   transform: translateY(0);
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .work-item {
     width: 350px;
     margin-bottom: 30px;
@@ -111,6 +127,13 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .work-item {
     margin-right: 27px;
     margin-bottom: 27px;

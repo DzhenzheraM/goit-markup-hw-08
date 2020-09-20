@@ -42,6 +42,15 @@
     fill: $accent-color;
   }
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media (min-width: 768px) {
   .list-firm {
     display: flex;
@@ -51,6 +60,13 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .list-firm .style {
     width: 226px;
   }
@@ -68,6 +84,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .list-firm .style {
     width: 170px;
   }
